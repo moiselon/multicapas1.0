@@ -12,9 +12,16 @@ namespace Multicapas
 {
     public partial class Form1 : Form
     {
+        form2 formularioacesoadatos;
         public Form1()
         {
             InitializeComponent();
+            formularioacesoadatos = new form2();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            formularioacesoadatos.ShowDialog();
         }
     }
 }
